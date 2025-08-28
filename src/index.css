@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Elegant Wedding Design System - Nallely & Oscar
+All colors MUST be HSL for proper theming.
 */
 
 @layer base {
   :root {
+    /* Wedding Color Palette */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 28 25% 20%;
+    
+    /* Elegant Gold Theme */
+    --primary: 45 95% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 45 100% 50%;
+    
+    /* Warm Beige & Cream */
+    --secondary: 40 30% 92%;
+    --secondary-foreground: 28 25% 20%;
+    
+    --accent: 42 78% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Romantic Neutrals */
+    --muted: 40 15% 96%;
+    --muted-foreground: 28 15% 45%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 28 25% 20%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
+    --popover-foreground: 28 25% 20%;
+    
+    --border: 40 20% 88%;
+    --input: 40 20% 95%;
+    --ring: 45 95% 35%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --radius: 0.75rem;
+    
+    /* Wedding Specific Colors */
+    --wedding-gold: 45 95% 35%;
+    --wedding-gold-light: 45 85% 65%;
+    --wedding-beige: 40 30% 92%;
+    --wedding-cream: 40 15% 96%;
+    --wedding-text: 28 25% 20%;
+    
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(var(--wedding-gold)), hsl(var(--wedding-gold-light)));
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--wedding-cream)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--wedding-cream)) 0%, hsl(var(--wedding-beige)) 100%);
+    
+    /* Shadows */
+    --shadow-elegant: 0 4px 20px hsl(var(--wedding-gold) / 0.1);
+    --shadow-card: 0 2px 10px hsl(var(--wedding-gold) / 0.05);
+    --shadow-glow: 0 0 30px hsl(var(--wedding-gold) / 0.2);
+    
+    /* Typography */
+    --font-romantic: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -91,6 +117,28 @@ All colors MUST be HSL.
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+/* Custom Wedding Utilities */
+@layer components {
+  .wedding-gradient {
+    background: var(--gradient-gold);
+  }
+  
+  .wedding-text-gradient {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .wedding-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .wedding-glow {
+    box-shadow: var(--shadow-glow);
   }
 }
 
