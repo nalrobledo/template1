@@ -18,7 +18,7 @@ interface LandingPageProps {
 
 const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-wedding-dark to-wedding-accent relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-wedding-accent to-background relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,215,0,0.1),transparent_70%)]"></div>
@@ -58,8 +58,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="left-4 bg-black/50 border-primary-glow text-white hover:bg-primary-glow hover:text-wedding-dark" />
-            <CarouselNext className="right-4 bg-black/50 border-primary-glow text-white hover:bg-primary-glow hover:text-wedding-dark" />
+            <CarouselPrevious className="left-4 bg-white/80 border-wedding-gold text-wedding-dark hover:bg-wedding-gold hover:text-white" />
+            <CarouselNext className="right-4 bg-white/80 border-wedding-gold text-wedding-dark hover:bg-wedding-gold hover:text-white" />
           </Carousel>
         </div>
 

@@ -8,58 +8,58 @@ All colors MUST be HSL for proper theming.
 
 @layer base {
   :root {
-    /* Dark Elegant Wedding Theme */
-    --background: 220 26% 6%;
-    --foreground: 0 0% 95%;
+    /* Elegant Gray & Cream Wedding Theme */
+    --background: 30 15% 95%;
+    --foreground: 0 0% 15%;
     
-    /* Elegant Gold Theme */
-    --primary: 45 95% 45%;
-    --primary-foreground: 220 26% 6%;
-    --primary-glow: 45 100% 60%;
+    /* Elegant Cream Theme */
+    --primary: 35 25% 75%;
+    --primary-foreground: 0 0% 15%;
+    --primary-glow: 35 30% 85%;
     
-    /* Dark Elegant Colors */
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 0 0% 90%;
+    /* Sophisticated Grays */
+    --secondary: 220 10% 85%;
+    --secondary-foreground: 0 0% 20%;
     
-    --accent: 42 78% 65%;
-    --accent-foreground: 220 26% 6%;
+    --accent: 30 20% 80%;
+    --accent-foreground: 0 0% 15%;
     
-    /* Dark Neutrals */
-    --muted: 220 15% 12%;
-    --muted-foreground: 220 10% 65%;
+    /* Soft Neutrals */
+    --muted: 220 8% 88%;
+    --muted-foreground: 220 5% 45%;
     
-    --card: 220 20% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 30 20% 98%;
+    --card-foreground: 0 0% 15%;
     
-    --popover: 220 20% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 30 20% 98%;
+    --popover-foreground: 0 0% 15%;
     
-    --border: 220 15% 20%;
-    --input: 220 15% 12%;
-    --ring: 45 95% 45%;
+    --border: 220 8% 75%;
+    --input: 220 8% 92%;
+    --ring: 35 25% 75%;
     
-    --destructive: 0 84% 60%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
     
     --radius: 0.75rem;
     
-    /* Wedding Specific Dark Colors */
-    --wedding-gold: 45 95% 45%;
-    --wedding-gold-light: 45 85% 65%;
-    --wedding-dark: 220 26% 6%;
-    --wedding-accent: 220 20% 15%;
-    --wedding-text: 0 0% 95%;
+    /* Wedding Specific Elegant Colors */
+    --wedding-gold: 35 25% 75%;
+    --wedding-gold-light: 35 30% 85%;
+    --wedding-dark: 220 15% 25%;
+    --wedding-accent: 220 8% 88%;
+    --wedding-text: 0 0% 15%;
     
-    /* Dark Gradients */
+    /* Elegant Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(var(--wedding-gold)), hsl(var(--wedding-gold-light)));
     --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--wedding-accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--wedding-dark)) 0%, hsl(var(--wedding-accent)) 100%);
-    --gradient-overlay: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--wedding-accent)) 0%, hsl(var(--background)) 100%);
+    --gradient-overlay: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05));
     
-    /* Dark Shadows */
-    --shadow-elegant: 0 4px 30px hsl(var(--wedding-gold) / 0.3);
-    --shadow-card: 0 2px 15px hsl(var(--wedding-gold) / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--wedding-gold) / 0.4);
+    /* Elegant Shadows */
+    --shadow-elegant: 0 4px 30px hsl(var(--wedding-gold) / 0.2);
+    --shadow-card: 0 2px 15px hsl(var(--wedding-gold) / 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--wedding-gold) / 0.15);
     
     /* Typography */
     --font-romantic: 'Playfair Display', serif;
