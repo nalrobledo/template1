@@ -3,21 +3,20 @@ import coupleImage from '@/assets/couple-hero.jpg';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-wedding-dark to-wedding-accent">
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{ 
           backgroundImage: `url(${coupleImage})`,
-          filter: 'brightness(0.3)'
         }}
       />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60" />
+      {/* Elegant Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-wedding-dark/80 via-wedding-dark/60 to-wedding-accent/80" />
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
+      <div className="relative z-10 text-center text-wedding-text max-w-4xl mx-auto px-6 fade-in">
         {/* Main Title */}
         <h1 className="font-romantic text-5xl md:text-7xl font-bold mb-6 tracking-wide">
           Nallely <span className="text-primary-glow italic">&</span> Oscar

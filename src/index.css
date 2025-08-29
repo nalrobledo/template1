@@ -8,61 +8,66 @@ All colors MUST be HSL for proper theming.
 
 @layer base {
   :root {
-    /* Wedding Color Palette */
-    --background: 0 0% 100%;
-    --foreground: 28 25% 20%;
+    /* Dark Elegant Wedding Theme */
+    --background: 220 26% 6%;
+    --foreground: 0 0% 95%;
     
     /* Elegant Gold Theme */
-    --primary: 45 95% 35%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 45 100% 50%;
+    --primary: 45 95% 45%;
+    --primary-foreground: 220 26% 6%;
+    --primary-glow: 45 100% 60%;
     
-    /* Warm Beige & Cream */
-    --secondary: 40 30% 92%;
-    --secondary-foreground: 28 25% 20%;
+    /* Dark Elegant Colors */
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 0 0% 90%;
     
-    --accent: 42 78% 60%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 78% 65%;
+    --accent-foreground: 220 26% 6%;
     
-    /* Romantic Neutrals */
-    --muted: 40 15% 96%;
-    --muted-foreground: 28 15% 45%;
+    /* Dark Neutrals */
+    --muted: 220 15% 12%;
+    --muted-foreground: 220 10% 65%;
     
-    --card: 0 0% 100%;
-    --card-foreground: 28 25% 20%;
+    --card: 220 20% 8%;
+    --card-foreground: 0 0% 95%;
     
-    --popover: 0 0% 100%;
-    --popover-foreground: 28 25% 20%;
+    --popover: 220 20% 8%;
+    --popover-foreground: 0 0% 95%;
     
-    --border: 40 20% 88%;
-    --input: 40 20% 95%;
-    --ring: 45 95% 35%;
+    --border: 220 15% 20%;
+    --input: 220 15% 12%;
+    --ring: 45 95% 45%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
     --radius: 0.75rem;
     
-    /* Wedding Specific Colors */
-    --wedding-gold: 45 95% 35%;
+    /* Wedding Specific Dark Colors */
+    --wedding-gold: 45 95% 45%;
     --wedding-gold-light: 45 85% 65%;
-    --wedding-beige: 40 30% 92%;
-    --wedding-cream: 40 15% 96%;
-    --wedding-text: 28 25% 20%;
+    --wedding-dark: 220 26% 6%;
+    --wedding-accent: 220 20% 15%;
+    --wedding-text: 0 0% 95%;
     
-    /* Gradients */
+    /* Dark Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(var(--wedding-gold)), hsl(var(--wedding-gold-light)));
-    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--wedding-cream)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--wedding-cream)) 0%, hsl(var(--wedding-beige)) 100%);
+    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--wedding-accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--wedding-dark)) 0%, hsl(var(--wedding-accent)) 100%);
+    --gradient-overlay: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
     
-    /* Shadows */
-    --shadow-elegant: 0 4px 20px hsl(var(--wedding-gold) / 0.1);
-    --shadow-card: 0 2px 10px hsl(var(--wedding-gold) / 0.05);
-    --shadow-glow: 0 0 30px hsl(var(--wedding-gold) / 0.2);
+    /* Dark Shadows */
+    --shadow-elegant: 0 4px 30px hsl(var(--wedding-gold) / 0.3);
+    --shadow-card: 0 2px 15px hsl(var(--wedding-gold) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--wedding-gold) / 0.4);
     
     /* Typography */
     --font-romantic: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
+    
+    /* Smooth Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -140,6 +145,44 @@ All colors MUST be HSL for proper theming.
   .wedding-glow {
     box-shadow: var(--shadow-glow);
   }
+
+  .smooth-transition {
+    transition: var(--transition-smooth);
+  }
+
+  .bounce-transition {
+    transition: var(--transition-bounce);
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer base {
@@ -148,6 +191,7 @@ All colors MUST be HSL for proper theming.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground smooth-transition;
+    scroll-behavior: smooth;
   }
 }
