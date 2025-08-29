@@ -52,7 +52,7 @@ const GiftsSection = () => {
                   className="inline-flex items-center space-x-2"
                 >
                   <Gift className="w-5 h-5" />
-                  <span>Ver Mesa de Regalos en Liverpool</span>
+                  <span>Ver Mesa de Regalos</span>
                 </a>
               </Button>
             </div>
