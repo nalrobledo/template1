@@ -79,7 +79,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
 
         
         {/* Marco con nombres de padres */}
-        <div className="relative bg-transparent backdrop-blur-lg p-10 md:p-12 rounded-xl text-center max-w-3xl mx-auto shadow-xl border border-wedding-gold mb-16">
+        <div className="relative bg-transparent p-10 md:p-12 rounded-xl text-center max-w-3xl mx-auto shadow-xl border border-wedding-gold mb-16">
           {/* Molduras en esquinas */}
           <div className="absolute -top-3 -left-3 w-12 h-12 border-t-4 border-l-4 border-wedding-gold rounded-tl-lg"></div>
           <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-4 border-r-4 border-wedding-gold rounded-br-lg"></div>
