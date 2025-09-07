@@ -92,13 +92,12 @@ const WeddingPage = () => {
       <footer className="bg-wedding-dark py-12">
         <div className="container mx-auto px-6 text-center">
           <h3 className="font-romantic text-3xl mb-4 text-primary-glow">Nallely & Oscar</h3>
-          <p className="text-wedding-text/80 text-lg mb-4">15 de Febrero de 2026</p>
           <div className="flex items-center justify-center space-x-4">
             <div className="w-16 h-px bg-primary"></div>
             <div className="w-3 h-3 border-2 border-primary rotate-45"></div>
             <div className="w-16 h-px bg-primary"></div>
           </div>
-          <p className="text-wedding-text/60 mt-8 text-sm">
+          <p className="font-romantic text-xl mb-4 text-primary-glow">
             Con amor, esperamos celebrar este día especial contigo
           </p>
         </div>

@@ -1,18 +1,16 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Volume2, VolumeX } from 'lucide-react';
+import React, { useState, useRef, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Volume2, VolumeX } from "lucide-react";
+import weddingSong from "@/assets/modern-piano.mp3"; // 👈 import correcto
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // Wedding song URL - replace with actual song
-  const weddingSongUrl = '/audio/wedding-song.mp3'; // You'll need to add this audio file
-
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.3; // Set to 30% volume
+      audioRef.current.volume = 0.3;
       audioRef.current.loop = true;
     }
   }, []);
@@ -44,9 +42,9 @@ const MusicPlayer = () => {
           onClick={togglePlay}
           className="rounded-full w-10 h-10 p-0 text-primary-glow hover:bg-primary-glow/20"
         >
-          {isPlaying ? '⏸️' : '▶️'}
+          {isPlaying ? "⏸️" : "▶️"}
         </Button>
-        
+
         <Button
           variant="ghost"
           size="sm"
@@ -56,10 +54,11 @@ const MusicPlayer = () => {
           {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
         </Button>
       </div>
-      
+
+      {/* 👇 Aquí va el <audio /> */}
       <audio
         ref={audioRef}
-        src={weddingSongUrl}
+        src={weddingSong}
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
         onEnded={() => setIsPlaying(false)}

@@ -12,7 +12,7 @@ const SparkbondLogo = () => {
         </div>
         
         <p className="text-muted-foreground text-sm italic">
-          Creando momentos inolvidables, una invitación a la vez
+          One spark is enough to ignite the celebration
         </p>
         
         <div className="flex items-center justify-center space-x-4 mt-6">
