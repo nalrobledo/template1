@@ -77,32 +77,33 @@ const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
           Nuestra Boda
         </h2>
 
+        
         {/* Marco con nombres de padres */}
-        <div className="relative bg-white/60 backdrop-blur-md p-10 md:p-12 rounded-xl text-center max-w-3xl mx-auto shadow-xl border border-wedding-gold mb-16">
-          {/* Molduras */}
+        <div className="relative bg-white/10 backdrop-blur-lg p-10 md:p-12 rounded-xl text-center max-w-3xl mx-auto shadow-xl border border-wedding-gold mb-16">
+          {/* Molduras en esquinas */}
           <div className="absolute -top-3 -left-3 w-12 h-12 border-t-4 border-l-4 border-wedding-gold rounded-tl-lg"></div>
           <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-4 border-r-4 border-wedding-gold rounded-br-lg"></div>
 
           {/* Título */}
-          <p className="text-lg md:text-xl text-wedding-dark italic mb-8 tracking-wide">
+          <p className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] italic mb-8 tracking-wide">
             Con la bendición de nuestros padres
           </p>
 
           {/* Grid de padres */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-wedding-dark mb-3">
+              <h3 className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] text-lg md:text-xl font-semibold mb-3">
                 Padres del Novio
               </h3>
-              <p className="text-xl md:text-2xl text-wedding-dark">
+              <p className="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] text-xl md:text-2xl">
                 Daniela Juarez <br /> Andres Huerta
               </p>
             </div>
             <div>
-              <h3 className="text-lg md:text-xl font-semibold text-wedding-dark mb-3">
+              <h3 className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] text-lg md:text-xl font-semibold mb-3">
                 Padres de la Novia
               </h3>
-              <p className="text-xl md:text-2xl text-wedding-dark">
+              <p className="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] text-xl md:text-2xl">
                 Esmeralda Robledo <br /> Andres Villas
               </p>
             </div>
