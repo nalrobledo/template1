@@ -46,10 +46,10 @@ const WeddingPage = () => {
               <EventSection
                 type="ceremony"
                 title="Ceremonia Religiosa"
-                location="Iglesia Corpus Christi"
-                address="Ojos de Sta. Lucía 275, Contry, Monterrey N.L."
+                location="Our Lady of Sorrows Church"
+                address="403 Valencia St, Las Vegas, NM 87701, Estados Unidos"
                 time="16:00 pm"
-                mapUrl="https://maps.google.com/?q=Iglesia+Corpus+Christi+Ojos+de+Sta+Lucia+275+Contry+Monterrey"
+                mapUrl="https://maps.app.goo.gl/KNk8Vs8LvZF6aZaz6"
               />
             </div>
             
@@ -58,10 +58,10 @@ const WeddingPage = () => {
               <EventSection
                 type="reception"
                 title="Recepción"
-                location="Los Ángeles Eventos"
-                address="Carretera a la Cortina S/N, Los Cavazos, Santiago N.L."
+                location="Chappel of the Flowers"
+                address="1717 Las Vegas Blvd S, Las Vegas, NV 89104, Estados Unidos"
                 time="19:30"
-                mapUrl="https://maps.google.com/?q=Los+Angeles+Eventos+Carretera+a+la+Cortina+Los+Cavazos+Santiago"
+                mapUrl="https://maps.app.goo.gl/rqXdnqidgunSvRT27"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ const WeddingPage = () => {
       </div>
       
       {/* Footer */}
-      <footer className="bg-wedding-dark py-12">
+      {/* <footer className="bg-wedding-dark py-12">
         <div className="container mx-auto px-6 text-center">
           <h3 className="font-romantic text-3xl mb-4 text-primary-glow">Nallely & Oscar</h3>
           <div className="flex items-center justify-center space-x-4">
@@ -101,7 +101,7 @@ const WeddingPage = () => {
             Con amor, esperamos celebrar este día especial contigo
           </p>
         </div>
-      </footer>
+      </footer> */}
 
       {/* Music Player */}
       <MusicPlayer />

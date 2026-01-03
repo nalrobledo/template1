@@ -104,7 +104,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
                 Padres de la Novia
               </h3>
               <p className="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] text-xl md:text-2xl">
-                Esmeralda Robledo <br /> Andres Villas
+                Esmeralda D. Robles <br /> Andres Villas
               </p>
             </div>
           </div>

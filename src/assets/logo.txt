@@ -1,0 +1,38 @@
+{/* Footer */}
+          <div className="text-center py-8 space-y-4">
+            <img 
+              src="/src/assets/logosb.png" 
+              alt="Logo Sparkbond Invitations" 
+              className="w-28 h-28 mx-auto opacity-80 hover:opacity-100 transition-opacity drop-shadow-lg"
+              style={{ filter: "drop-shadow(0 0 10px black)" }}
+            />
+
+            <div className="space-y-2">
+              {/* Website */}
+              <a 
+                href="https://www.spark-bond.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block text-lg text-black hover:underline"
+              >
+                www.spark-bond.com
+              </a>
+
+              {/* Instagram */}
+              <a 
+                href="https://www.instagram.com/sparkbond" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="block text-lg text-black hover:underline"
+              >
+                @sparkbond
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default InvitationCard;

@@ -6,7 +6,7 @@ const GiftsSection = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-background to-wedding-cream">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           {/* Icon */}
           <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-8">
             <Gift className="w-10 h-10 text-primary" />
@@ -18,8 +18,8 @@ const GiftsSection = () => {
           </h2>
           
           {/* Content */}
-          <div className="bg-white rounded-lg p-12 shadow-[var(--shadow-elegant)] border border-wedding-beige">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-6">
+          <div className="bg-white rounded-lg p-8 shadow-lg shadow-primary/50">
+            <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-full mb-6 max-w-36 min-w-24">
               <Heart className="w-6 h-6 text-primary" />
             </div>
             

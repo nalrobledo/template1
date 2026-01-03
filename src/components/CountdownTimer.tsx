@@ -43,7 +43,7 @@ const CountdownTimer = () => {
           </h3>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-white rounded-lg p-6 shadow-[var(--shadow-card)] border border-wedding-beige">
+            <div className="bg-white rounded-lg p-6 shadow-lg shadow-primary/50">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {timeLeft.days}
               </div>
@@ -52,7 +52,7 @@ const CountdownTimer = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg p-6 shadow-[var(--shadow-card)] border border-wedding-beige">
+            <div className="bg-white rounded-lg p-6 shadow-lg shadow-primary/50">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {timeLeft.hours}
               </div>
@@ -61,7 +61,7 @@ const CountdownTimer = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg p-6 shadow-[var(--shadow-card)] border border-wedding-beige">
+            <div className="bg-white rounded-lg p-6 shadow-lg shadow-primary/50">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {timeLeft.minutes}
               </div>
@@ -70,7 +70,7 @@ const CountdownTimer = () => {
               </div>
             </div>
             
-            <div className="bg-white rounded-lg p-6 shadow-[var(--shadow-card)] border border-wedding-beige">
+            <div className="bg-white rounded-lg p-6 shadow-lg shadow-primary/50">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {timeLeft.seconds}
               </div>

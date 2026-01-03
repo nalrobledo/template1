@@ -5,7 +5,7 @@ const DresscodeSection = () => {
   return (
     <section className="py-20 bg-wedding-beige">
       <div className="container mx-auto px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto text-center">
           {/* Icon */}
           <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-full mb-8">
             <Shirt className="w-10 h-10 text-primary" />
@@ -17,7 +17,7 @@ const DresscodeSection = () => {
           </h2>
           
           {/* Content */}
-          <div className="bg-white rounded-lg p-8 shadow-[var(--shadow-card)] border border-primary/20">
+          <div className="bg-white rounded-lg p-8 shadow-lg shadow-primary/50">
             <h3 className="font-romantic text-3xl font-bold text-primary mb-6">
               Etiqueta
             </h3>
