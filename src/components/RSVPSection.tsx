@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { useToast } from '@/hooks/use-toast'
 import { Users, Check, X, Heart, UserCheck } from 'lucide-react'
@@ -45,19 +44,23 @@ const RSVPSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto text-center">
 
-          {/* Icon */}
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/20 rounded-full mb-8 wedding-glow">
-            <Users className="w-10 h-10 text-primary" />
-          </div>
+          {/* Recuadro principal */}
+          <div className="bg-white rounded-xl p-10 shadow-lg shadow-primary/40">
 
-          <h2 className="font-romantic text-4xl md:text-5xl font-bold text-wedding-text mb-12">
-            Confirmación de Asistencia
-          </h2>
+            {/* Icono */}
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/20 rounded-full mx-auto mb-6 wedding-glow">
+              <Users className="w-10 h-10 text-primary" />
+            </div>
 
-          <div className="bg-white rounded-lg p-8 shadow-lg shadow-primary/50">
+            {/* Título */}
+            <h2 className="font-romantic text-4xl md:text-5xl font-bold text-wedding-text mb-10">
+              Confirmación de Asistencia
+            </h2>
 
-            {/* PASO 1: SELECCIONAR INVITADO */}
+            {/* Contenido */}
             {!selectedGuest ? (
+
+              /* PASO 1 */
               <div className="space-y-6 max-w-md mx-auto">
                 <Label className="text-base font-medium">
                   Busca tu nombre en la lista
@@ -79,7 +82,7 @@ const RSVPSection = () => {
 
             ) : attending === null ? (
 
-              /* PASO 2: CONFIRMAR PASES */
+              /* PASO 2 */
               <div className="space-y-6 max-w-md mx-auto text-center">
                 <div className="bg-primary/10 rounded-lg p-6">
                   <UserCheck className="w-12 h-12 text-primary mx-auto mb-4" />
@@ -137,7 +140,7 @@ const RSVPSection = () => {
 
             ) : (
 
-              /* PASO 3: CONFIRMADO */
+              /* PASO 3 */
               <div className="space-y-6 text-center">
                 <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full ${
                   attending ? 'bg-green-100' : 'bg-red-100'
