@@ -1,5 +1,5 @@
 import React from 'react';
-import coupleImage from '@/assets/xvañera6.jpg';
+import coupleImage from '@/assets/xvañera3.jpg';
 
 const HeroSection = () => {
   return (

@@ -11,8 +11,8 @@ import { ChevronDown } from "lucide-react";
 
 // 🔹 Importa las fotos desde assets
 import on3 from "@/assets/xvañera7.jpg";
-import on6 from "@/assets/xvañera6.jpg";
-import on7 from "@/assets/xvañera3.jpg";
+import on6 from "@/assets/xvañera8.jpg";
+import on7 from "@/assets/xvañera6.jpg";
 
 const couplePhotos = [on3, on6, on7];
 
