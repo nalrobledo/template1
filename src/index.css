@@ -9,46 +9,50 @@ All colors MUST be HSL for proper theming.
 @layer base {
   :root {
     /* Elegant Gray & Cream Wedding Theme */
-    --background: 30 15% 95%;
-    --foreground: 0 0% 15%;
+    --background: 20 60% 96%;          /* crema rosado */
+    --foreground: 340 20% 18%;         /* vino suave */
     
-    /* Elegant Cream Theme */
-    --primary: 35 25% 75%;
-    --primary-foreground: 0 0% 15%;
-    --primary-glow: 35 30% 85%;
+    /* Primary – Rose Peach */
+    --primary: 12 85% 72%;             /* durazno elegante */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 10 90% 85%;
     
-    /* Sophisticated Grays */
-    --secondary: 220 10% 85%;
-    --secondary-foreground: 0 0% 20%;
+    /* Secondary – Soft Rose */
+    --secondary: 340 40% 88%;
+    --secondary-foreground: 340 25% 20%;
     
-    --accent: 30 20% 80%;
-    --accent-foreground: 0 0% 15%;
+    /* Accent – Warm Pink */
+    --accent: 350 65% 82%;
+    --accent-foreground: 340 25% 18%;
     
-    /* Soft Neutrals */
-    --muted: 220 8% 88%;
-    --muted-foreground: 220 5% 45%;
+    /* Muted tones */
+    --muted: 20 30% 90%;
+    --muted-foreground: 340 15% 45%;
     
-    --card: 30 20% 98%;
-    --card-foreground: 0 0% 15%;
+    /* Cards & Popovers */
+    --card: 0 0% 100%;
+    --card-foreground: 340 20% 18%;
     
-    --popover: 30 20% 98%;
-    --popover-foreground: 0 0% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 340 20% 18%;
     
-    --border: 220 8% 75%;
-    --input: 220 8% 92%;
-    --ring: 35 25% 75%;
+    /* Borders & Inputs */
+    --border: 15 40% 80%;
+    --input: 20 40% 92%;
+    --ring: 12 85% 72%;
     
-    --destructive: 0 65% 55%;
+    /* Alerts */
+    --destructive: 0 70% 60%;
     --destructive-foreground: 0 0% 100%;
     
     --radius: 0.75rem;
     
-    /* Wedding Specific Elegant Colors */
-    --wedding-gold: 35 25% 75%;
-    --wedding-gold-light: 35 30% 85%;
-    --wedding-dark: 220 15% 25%;
-    --wedding-accent: 220 8% 88%;
-    --wedding-text: 0 0% 15%;
+    /* Wedding-specific colors */
+    --wedding-gold: 18 90% 70%;        /* naranja rosado */
+    --wedding-gold-light: 20 95% 85%;
+    --wedding-dark: 340 25% 22%;
+    --wedding-accent: 350 50% 90%;
+    --wedding-text: 340 20% 18%;
     
     /* Elegant Gradients */
     --gradient-gold: linear-gradient(135deg, hsl(var(--wedding-gold)), hsl(var(--wedding-gold-light)));

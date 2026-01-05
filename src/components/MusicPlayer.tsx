@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Volume2, VolumeX } from "lucide-react";
-import weddingSong from "@/assets/modern-piano.mp3"; // 👈 import correcto
+import weddingSong from "@/assets/bright-horizons-398151.mp3"; // 👈 import correcto
 
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);

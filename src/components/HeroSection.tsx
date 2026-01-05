@@ -1,5 +1,5 @@
 import React from 'react';
-import coupleImage from '@/assets/couple-hero.jpg';
+import coupleImage from '@/assets/xvañera6.jpg';
 
 const HeroSection = () => {
   return (
@@ -19,12 +19,12 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-wedding-text max-w-4xl mx-auto px-6 fade-in">
         {/* Main Title */}
         <h1 className="font-romantic text-5xl md:text-7xl font-bold mb-6 tracking-wide">
-          Nallely <span className="text-gray-800 italic">&</span> Oscar
+          Natalia <span className="text-gray-800 italic"></span> de La Garza
         </h1>
         
         {/* Subtitle */}
         <h2 className="font-romantic text-3xl md:text-4xl text-gray-800 italic drop-shadow-[0_3px_6px_rgba(0,0,0,0.5)] mb-10">
-          Nuestra Boda
+          Mis XV Años
         </h2>
         
         {/* Decorative Element */}

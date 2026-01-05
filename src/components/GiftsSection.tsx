@@ -25,16 +25,11 @@ const GiftsSection = () => {
             
             <div className="space-y-6 text-lg text-wedding-text leading-relaxed">
               <p className="font-romantic text-2xl text-primary italic">
-                "Que nos acompañes en este gran día es el mejor regalo para nosotros."
+                "Que nos acompañes en este gran día es el mejor regalo."
               </p>
               
               <p>
-                Sin embargo, hemos decidido embarcarnos en un proyecto muy especial: 
-                <span className="font-semibold text-primary"> Amueblar nuestro hogar.</span>
-              </p>
-              
-              <p>
-                Hemos creado una lista de deseos con artículos que nos ayudarán a completar nuestro hogar.
+               Si deseas obsequiarnos algo adicional, hemos preparado con cariño una lista de deseos con algunos artículos que nos encantarían.
               </p>
             </div>
             

@@ -8,7 +8,7 @@ const CountdownTimer = () => {
     seconds: 0
   });
 
-  const weddingDate = new Date('2026-02-15T16:00:00');
+  const weddingDate = new Date('2026-09-15T16:00:00');
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -33,7 +33,7 @@ const CountdownTimer = () => {
       <div className="container mx-auto px-6 text-center">
         {/* Date */}
         <h2 className="font-romantic text-4xl md:text-5xl font-bold text-wedding-text mb-4">
-          Sábado 15 de Febrero de 2026
+          Jueves 15 de Octubre de 2026
         </h2>
         
         {/* Countdown */}

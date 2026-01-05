@@ -10,12 +10,11 @@ import {
 import { ChevronDown } from "lucide-react";
 
 // 🔹 Importa las fotos desde assets
-import on3 from "@/assets/on3.jpg";
-import on6 from "@/assets/on6.jpg";
-import on7 from "@/assets/on7.jpg";
-import on8 from "@/assets/on8.jpg";
+import on3 from "@/assets/xvañera7.jpg";
+import on6 from "@/assets/xvañera6.jpg";
+import on7 from "@/assets/xvañera3.jpg";
 
-const couplePhotos = [on3, on6, on7, on8];
+const couplePhotos = [on3, on6, on7];
 
 interface LandingPageProps {
   onEnterInvitation: () => void;
@@ -69,12 +68,12 @@ const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
       <div className="relative z-10 text-center px-6 max-w-4xl">
         {/* Título principal */}
         <h1 className="font-romantic text-6xl md:text-8xl font-bold text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] mb-4">
-          Nallely <span className="text-wedding-gold italic">&</span> Oscar
+          Natalia <span className="text-wedding-gold italic"></span> de La Garza 
         </h1>
 
         {/* Subtítulo */}
         <h2 className="font-romantic text-3xl md:text-4xl text-white italic drop-shadow-[0_3px_6px_rgba(0,0,0,0.7)] mb-10">
-          Nuestra Boda
+          Mis XV Años
         </h2>
 
         
@@ -86,27 +85,14 @@ const LandingPage: React.FC<LandingPageProps> = ({ onEnterInvitation }) => {
 
           {/* Título */}
           <p className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] italic mb-8 tracking-wide">
-            Con la bendición de nuestros padres
+            Con la bendición de mis padres
           </p>
 
-          {/* Grid de padres */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
-            <div>
-              <h3 className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] text-lg md:text-xl font-semibold mb-3">
-                Padres del Novio
-              </h3>
-              <p className="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] text-xl md:text-2xl">
-                Daniela Juarez <br /> Andres Huerta
-              </p>
-            </div>
-            <div>
-              <h3 className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] text-lg md:text-xl font-semibold mb-3">
-                Padres de la Novia
-              </h3>
-              <p className="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] text-xl md:text-2xl">
-                Esmeralda D. Robles <br /> Andres Villas
-              </p>
-            </div>
+          {/* Nombres centrados */}
+          <div className="text-center">
+            <p className="text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] text-xl md:text-2xl">
+              Natalia Betancourt <br /> Gregorio de La Garza Torres
+            </p>
           </div>
         </div>
 

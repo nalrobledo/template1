@@ -46,10 +46,10 @@ const WeddingPage = () => {
               <EventSection
                 type="ceremony"
                 title="Ceremonia Religiosa"
-                location="Our Lady of Sorrows Church"
-                address="403 Valencia St, Las Vegas, NM 87701, Estados Unidos"
-                time="16:00 pm"
-                mapUrl="https://maps.app.goo.gl/KNk8Vs8LvZF6aZaz6"
+                location="Catedral de Guadalajara"
+                address="Av. Fray Antonio Alcalde 10, Zona Centro, 44100 Guadalajara, Jal."
+                time="15:00 pm"
+                mapUrl="https://maps.app.goo.gl/F46cMfrfHKcWust28"
               />
             </div>
             
@@ -58,10 +58,10 @@ const WeddingPage = () => {
               <EventSection
                 type="reception"
                 title="Recepción"
-                location="Chappel of the Flowers"
-                address="1717 Las Vegas Blvd S, Las Vegas, NV 89104, Estados Unidos"
-                time="19:30"
-                mapUrl="https://maps.app.goo.gl/rqXdnqidgunSvRT27"
+                location="Ex Convento de Santa Teresa"
+                address="C. Donato Guerra 25, Zona Centro, 44100 Guadalajara, Jal."
+                time="19:00"
+                mapUrl="https://maps.app.goo.gl/YGWKiFD26yywt97x9"
               />
             </div>
           </div>
