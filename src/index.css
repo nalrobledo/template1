@@ -8,124 +8,83 @@ All colors MUST be HSL for proper theming.
 
 @layer base {
   :root {
-    /* Elegant Gray & Cream Wedding Theme */
-    --background: 20 60% 96%;          /* crema rosado */
-    --foreground: 340 20% 18%;         /* vino suave */
-    
-    /* Primary – Rose Peach */
-    --primary: 12 85% 72%;             /* durazno elegante */
+    /* ================= BASE ================= */
+    --background: 36 40% 96%;          /* ivory cálido */
+    --foreground: 240 10% 12%;         /* charcoal elegante */
+
+    /* ================= PRIMARY ================= */
+    --primary: 18 70% 60%;             /* champagne gold */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 10 90% 85%;
-    
-    /* Secondary – Soft Rose */
-    --secondary: 340 40% 88%;
-    --secondary-foreground: 340 25% 20%;
-    
-    /* Accent – Warm Pink */
-    --accent: 350 65% 82%;
-    --accent-foreground: 340 25% 18%;
-    
-    /* Muted tones */
-    --muted: 20 30% 90%;
-    --muted-foreground: 340 15% 45%;
-    
-    /* Cards & Popovers */
+    --primary-glow: 18 80% 78%;
+
+    /* ================= SECONDARY ================= */
+    --secondary: 30 35% 88%;           /* beige rosado suave */
+    --secondary-foreground: 240 10% 18%;
+
+    /* ================= ACCENT ================= */
+    --accent: 20 65% 70%;              /* gold rosé vivo pero fino */
+    --accent-foreground: 240 10% 12%;
+
+    /* ================= MUTED ================= */
+    --muted: 36 25% 92%;
+    --muted-foreground: 240 6% 42%;
+
+    /* ================= SURFACES ================= */
     --card: 0 0% 100%;
-    --card-foreground: 340 20% 18%;
-    
+    --card-foreground: 240 10% 12%;
+
     --popover: 0 0% 100%;
-    --popover-foreground: 340 20% 18%;
-    
-    /* Borders & Inputs */
-    --border: 15 40% 80%;
-    --input: 20 40% 92%;
-    --ring: 12 85% 72%;
-    
-    /* Alerts */
-    --destructive: 0 70% 60%;
+    --popover-foreground: 240 10% 12%;
+
+    /* ================= BORDERS ================= */
+    --border: 30 25% 85%;
+    --input: 36 30% 94%;
+    --ring: 18 70% 60%;
+
+    /* ================= ALERTS ================= */
+    --destructive: 0 65% 55%;
     --destructive-foreground: 0 0% 100%;
-    
+
     --radius: 0.75rem;
-    
-    /* Wedding-specific colors */
-    --wedding-gold: 18 90% 70%;        /* naranja rosado */
-    --wedding-gold-light: 20 95% 85%;
-    --wedding-dark: 340 25% 22%;
-    --wedding-accent: 350 50% 90%;
-    --wedding-text: 340 20% 18%;
-    
-    /* Elegant Gradients */
-    --gradient-gold: linear-gradient(135deg, hsl(var(--wedding-gold)), hsl(var(--wedding-gold-light)));
-    --gradient-elegant: linear-gradient(180deg, hsl(var(--background)), hsl(var(--wedding-accent)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--wedding-accent)) 0%, hsl(var(--background)) 100%);
-    --gradient-overlay: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05));
-    
-    /* Elegant Shadows */
-    --shadow-elegant: 0 4px 30px hsl(var(--wedding-gold) / 0.2);
-    --shadow-card: 0 2px 15px hsl(var(--wedding-gold) / 0.08);
-    --shadow-glow: 0 0 40px hsl(var(--wedding-gold) / 0.15);
-    
-    /* Typography */
+
+    /* ================= WEDDING ================= */
+    --wedding-gold: 18 70% 60%;        /* champagne */
+    --wedding-gold-light: 20 80% 80%;
+    --wedding-dark: 240 10% 14%;
+    --wedding-accent: 30 40% 92%;
+    --wedding-text: 240 10% 12%;
+
+    /* ================= GRADIENTS ================= */
+    --gradient-gold: linear-gradient(
+      135deg,
+      hsl(var(--wedding-gold)),
+      hsl(var(--wedding-gold-light))
+    );
+
+    --gradient-elegant: linear-gradient(
+      180deg,
+      hsl(var(--background)),
+      hsl(var(--wedding-accent))
+    );
+
+    --gradient-hero: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.65)
+    );
+
+    /* ================= SHADOWS ================= */
+    --shadow-elegant: 0 10px 40px hsl(var(--wedding-gold) / 0.18);
+    --shadow-card: 0 4px 20px hsl(var(--wedding-gold) / 0.08);
+    --shadow-glow: 0 0 50px hsl(var(--wedding-gold) / 0.2);
+
+    /* ================= TYPOGRAPHY ================= */
     --font-romantic: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
-    
-    /* Smooth Transitions */
+
+    /* ================= MOTION ================= */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
