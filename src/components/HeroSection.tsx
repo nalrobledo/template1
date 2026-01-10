@@ -3,18 +3,17 @@ import coupleImage from "@/assets/couple11.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* ===================== IMAGEN DE FONDO ===================== */}
-      <div className="absolute inset-0">
-        <img
-          src={coupleImage}
-          alt="Fernanda y Saúl"
-          className="w-full h-full object-cover scale-105"
-        />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+        <div className="absolute inset-0">
+          <img
+            src={coupleImage}
+            alt="Fernanda y Saúl"
+            className="w-full h-full object-cover scale-105"
+          />
 
-        {/* Overlay elegante */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/45 to-black/65" />
-      </div>
+          {/* Overlay de claridad */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-black/20 to-black/55" />
+        </div>
 
       {/* ===================== CONTENIDO ===================== */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6 fade-in">
